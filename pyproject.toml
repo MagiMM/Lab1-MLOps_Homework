@@ -4,4 +4,24 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pre-commit>=4.5.1",
+]
+
+
+
+[project.optional-dependencies]
+prod = [
+    "scikit-learn",
+    "clean-text",
+    "joblib",
+    "torch",
+    "sentence-transformers",
+]
+dev = [
+    "ruff",
+    "mypy",
+]
+test = [
+    "pytest",
+]
