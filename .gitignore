@@ -191,6 +191,13 @@ cython_debug/
 # Ruff stuff:
 .ruff_cache/
 
+# macOS
+.DS_Store
+
+# Model download artifacts
+models/model_archive
+models/model.zip
+
 # PyPI configuration file
 .pypirc
 
